@@ -4,56 +4,50 @@ import './Cards.scss';
 function Cards() {
   return (
       <div className="card-section">
-        <div className="card-section-header">
+        <div className="card-section__header">
             <h1>Explore Vietnam</h1>
         </div>
-        <div className="card">
+        <div className="card-section__cards">
             <div className="row">
                 <div class="col-sm-3">
-                    <div className="card bg-dark text-white">
-                        <img src={require('../Images/hotels1.jpg')} class="card-img-top cardimage" alt="hotels" />
-                        <div class="card-img-overlay card-container">
-                            <div className="card-text">
-                                <a href="#" class="btn btn-light btn-lg">Hotels</a>
-                            </div>
+                    <div className="card-section__card bg-dark text-white">
+                        <img src={require('../Images/hotels1.jpg')} className="card-img-top" alt="hotels" />
+                        <div class="card-section__card-text">
+                            <h1>Hotels</h1>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm-3">
-                    <div className="card bg-dark text-white">
-                        <img src={require('../Images/restaurant1.jpg')} class="card-img-top" alt="restaurants" />
-                        <div class="card-img-overlay card-container">
-                        <div className="card-text">
-                                <a href="#" class="btn btn-light btn-lg">Restaurants</a>
-                            </div>
+                    <div className="card-section__card bg-dark text-white">
+                        <img src={require('../Images/restaurant1.jpg')} className="card-img-top" alt="restaurants" />
+                        <div class="card-section__card-text">
+                            <h1>Restaurants</h1>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm-3">
-                    <div className="card bg-dark text-white">
-                        <img src={require('../Images/nightlife1.jpg')} class="card-img-top" alt="restaurants" />
-                        <div class="card-img-overlay card-container">
-                        <div className="card-text">
-                                <a href="#" class="btn btn-light btn-lg">Nightlife</a>
-                            </div>
+                    <div className="card-section__card bg-dark text-white">
+                        <img src={require('../Images/nightlife1.jpg')} className="card-img-top" alt="Activities" />
+                        <div class="card-section__card-text">
+                            <h1>Activities</h1>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-sm-3">
-                    <div className="card bg-dark text-white">
-                        <img src={require('../Images/nightlife2.jpg')} class="card-img-top" alt="restaurants" />
-                        <div class="card-img-overlay card-container">
-                        <div className="card-text">
-                                <a href="#" class="btn btn-light btn-lg">Attractions</a>
-                            </div>
+                    <div className="card-section__card bg-dark text-white">
+                        <img src={require('../Images/nightlife2.jpg')} className="card-img-top" alt="Nightlife" />
+                        <div class="card-section__card-text">
+                            <h1>Nightlife</h1>
                         </div>
                     </div>
                 </div>
             </div>
-    </div>
+
+            
+        </div>
     </div>
   );
 }
