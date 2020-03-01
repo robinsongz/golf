@@ -1,0 +1,45 @@
+.navbar {
+    margin-bottom: 10px;
+    background: #00843D;
+
+    &__links {
+        position: relative;
+        display: inline-block;
+        align-items: center;
+        color: #fff;
+        outline: none;
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-size: 1em;
+        margin: 15px 25px;
+        font-family: 'Raleway';
+        text-transform: uppercase;
+
+        &:hover {
+            color: #FFCD00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        &:hover:after {
+            width: 100%;
+        }
+
+        &:after, &:before {
+            transition: all .5s;
+        }
+
+        &:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 0%;
+            content: '.';
+            color: transparent;
+            background: white;
+            height: 1px;
+        }
+    }
+}
