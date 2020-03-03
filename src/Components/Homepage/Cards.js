@@ -7,7 +7,7 @@ function Cards() {
   return (
       <div className="card-section">
           <div className="card-section__header">
-              <h1>Navigation</h1>
+              <h1>Explore</h1>
           </div>
         <div className="card-section__cards">
             <div className="row">
