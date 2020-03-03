@@ -8,7 +8,7 @@ function NavbarComp() {
   return (
     <div>
       <Navbar className="navbar" fill expand="lg">
-        <NavLink to='/home'>PG Tour Logo</NavLink>
+        <NavLink to='/'>PG Tour Logo</NavLink>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto ml-3">

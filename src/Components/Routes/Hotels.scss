@@ -1,0 +1,60 @@
+.hotels {
+    &__header {
+        position: relative;
+        text-align: center;
+        height: 50vh;
+        background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../../Images/hotels1.jpg');
+    }
+
+    &__header h1 {
+        font-size: 80px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 100;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0,0,0,0.8);
+	    -webkit-box-shadow: 0 0 30px rgba(0,0,0,0.7);
+            box-shadow: 0 0 30px rgba(0,0,0,0.8);
+        width: 100%;
+    }
+}
+
+.tabs {
+    margin: 10px;
+
+    &__tablist {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-left: -20px;
+    }
+
+    &__tab {
+        font-weight: 400;
+        width: 100%;
+        text-transform: uppercase;
+        display: inline-block;
+        border: 1px solid;
+        text-align: center;
+        bottom: -1px;
+        position: relative;
+        list-style: none;
+        padding: 6px 12px;
+        cursor: pointer;
+        transition: 0.1s;
+        &:hover {
+            font-weight: 700;
+        }
+    }
+}
+
+.react-tabs__tab--selected {
+    background: #00843D;
+    border-color: black;
+    color: white;
+    border-radius: none !important;
+}
