@@ -1,6 +1,14 @@
+.logo {
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .navbar {
     margin-bottom: 10px;
     background: #00843D;
+    height: 50px;
 
     &__links {
         position: relative;
@@ -8,9 +16,9 @@
         align-items: center;
         color: #fff;
         outline: none;
-        letter-spacing: 1px;
+        letter-spacing: .8px;
         font-weight: 400;
-        font-size: 1em;
+        font-size: .9em;
         margin: 15px 25px;
         font-family: 'Raleway';
         text-transform: uppercase;

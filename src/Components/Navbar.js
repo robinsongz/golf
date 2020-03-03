@@ -7,23 +7,22 @@ import { NavLink } from 'react-router-dom';
 function NavbarComp() {
   return (
     <div>
+      <NavLink className="logo" to='/'>
+        <img src={require('../Images/logo.jpg')} alt="logo" />
+      </NavLink>
       <Navbar className="navbar" fill expand="lg">
-        <NavLink to='/'>PG Tour Logo</NavLink>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto ml-3">
-                <NavLink className="ml-5 navbar__links" to="/packagetour"> </NavLink>
-                <NavLink className="ml-5 navbar__links" to="/hotels">Hotels</NavLink>
-                <NavLink className="ml-5 navbar__links" to="/golfcourse">Golf Course</NavLink>
-                <NavLink className="ml-5 navbar__links" to="/Restaurants">Restaurants</NavLink>
-                <NavLink className="ml-5 navbar__links" to="/Activities">Activities </NavLink>
-                <NavLink className="ml-5 navbar__links" to="/Nightlife">Nightlife </NavLink>
+              <Nav className="m-auto">
+                <NavLink className="navbar__links" to="/packagetour">Package Tour </NavLink>
+                <NavLink className="navbar__links" to="/hotels">Hotels</NavLink>
+                <NavLink className="navbar__links" to="/golfcourse">Golf Courses</NavLink>
+                <NavLink className="navbar__links" to="/Restaurants">Restaurants</NavLink>
+                <NavLink className="navbar__links" to="/Activities">Activities </NavLink>
+                <NavLink className="navbar__links" to="/Nightlife">Nightlife </NavLink>
+                <NavLink className="navbar__links" to="/Activities">About Us </NavLink>
+                <NavLink className="navbar__links" to="/Nightlife">Contact </NavLink>
               </Nav>
-
-              <Nav className="mr-5">
-                <NavLink className="ml-5 navbar__links" to="/aboutus">About Us</NavLink>
-                  <NavLink className="ml-5 navbar__links" to="/contact">Contact</NavLink>
-                </Nav>
             </Navbar.Collapse>
         </Navbar>
     </div>

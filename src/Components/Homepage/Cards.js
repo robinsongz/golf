@@ -6,9 +6,12 @@ import { NavLink } from 'react-router-dom';
 function Cards() {
   return (
       <div className="card-section">
+          <div className="card-section__header">
+              <h1>Navigation</h1>
+          </div>
         <div className="card-section__cards">
             <div className="row">
-                <div class="col-sm-4">
+                <div class="col-12 col-lg-4 col-md-6">
                     <NavLink to="/packagetour">
                         <div className="card-section__card bg-dark text-white">
                             <img src={require('../../Images/tour.jpg')} className="card-img-top" alt="package tour" />
@@ -19,7 +22,7 @@ function Cards() {
                     </NavLink>
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-12 col-lg-4 col-md-6">
                     <NavLink to="/hotels">
                         <div className="card-section__card bg-dark text-white">
                             <img src={require('../../Images/hotels1.jpg')} className="card-img-top" alt="hotels" />
@@ -30,7 +33,7 @@ function Cards() {
                     </NavLink>
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-12 col-lg-4 col-md-6">
                     <NavLink to='/golfcourse'>
                         <div className="card-section__card bg-dark text-white">
                             <img src={require('../../Images/golf course.jpg')} className="card-img-top" alt="golf course" />
@@ -40,6 +43,8 @@ function Cards() {
                         </div>
                     </NavLink>
                 </div>
+
+                
             </div>
 
             <div className="row">
