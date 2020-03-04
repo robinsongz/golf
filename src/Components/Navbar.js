@@ -1,16 +1,44 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {Navbar, Nav, NavDropdown}  from 'react-bootstrap';
 import './Navbar.scss';
 
 import { NavLink } from 'react-router-dom';
 
-function NavbarComp() {
-  return (
+class NavbarComp extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      scrollingLock: false
+    }
+
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll() {
+    if (window.scrollY > 234.25) {
+      this.setState({
+        scrollingLock: true
+      });
+    } else if (window.scrollY < 234.25) {
+      this.setState({ scrollingLock: false
+      });
+    }
+  }
+  render() {
+    return(
     <div>
       <NavLink className="logo" to='/'>
         <img src={require('../Images/logo.jpg')} alt="logo" />
       </NavLink>
-      <Navbar className="navbar" fill expand="lg">
+      <Navbar style={{ position: this.state.scrollingLock ? "fixed" : "relative"}} className="navbar" fill expand="lg">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="m-auto">
@@ -26,7 +54,8 @@ function NavbarComp() {
             </Navbar.Collapse>
         </Navbar>
     </div>
-  );
+    )
+  }
 }
 
 export default NavbarComp;

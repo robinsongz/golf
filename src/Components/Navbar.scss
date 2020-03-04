@@ -9,6 +9,11 @@
     margin-bottom: 10px;
     background: #00843D;
     height: 50px;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.5s ease;
 
     &__links {
         position: relative;
@@ -26,7 +31,6 @@
         &:hover {
             color: #FFCD00;
             text-decoration: none;
-            font-weight: bold;
         }
 
         &:hover:after {
