@@ -18,7 +18,9 @@
     "react-responsive-carousel": "^3.1.51",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.1",
-    "react-tabs": "^3.1.0"
+    "react-tabs": "^3.1.0",
+    "siema": "^1.5.1",
+    "swiper": "^5.3.6"
   },
   "scripts": {
     "start": "react-scripts start",

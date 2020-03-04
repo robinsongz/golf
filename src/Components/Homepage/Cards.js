@@ -48,7 +48,7 @@ function Cards() {
             </div>
 
             <div className="row">
-                <div class="col-sm-4">
+                <div class="col-12 col-lg-4 col-md-6">
                     <NavLink to='/restaurants'>
                         <div className="card-section__card bg-dark text-white">
                             <img src={require('../../Images/restaurant1.jpg')} className="card-img-top" alt="restaurants" />
@@ -59,7 +59,7 @@ function Cards() {
                     </NavLink>
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-12 col-lg-4 col-md-6">
                     <NavLink to='/activities'>
                         <div className="card-section__card bg-dark text-white">
                             <img src={require('../../Images/activities1.jpg')} className="card-img-top" alt="activities" />
@@ -70,12 +70,12 @@ function Cards() {
                     </NavLink>
                 </div>
 
-                <div class="col-sm-4">
-                    <NavLink to='/nightlife'>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <NavLink to='/attractions'>
                         <div className="card-section__card bg-dark text-white">
-                            <img src={require('../../Images/nightlife1.jpg')} className="card-img-top" alt="nightlife" />
+                            <img src={require('../../Images/nightlife1.jpg')} className="card-img-top" alt="attractions" />
                             <div class="card-section__card-text">
-                                <h1>Nightlife</h1>
+                                <h1>Attractions</h1>
                             </div>
                         </div>
                     </NavLink>
