@@ -13,17 +13,31 @@ function Footer() {
     <div>
        
         <div className="footer">
-         
-                <div className="item">
-                    <FontAwesomeIcon icon={faWeixin} className="weixin" />  rich888
+          <div className="footer__items container">
+            <div className='row'>
+              <div className="col footer__contact">
+                <div className="footer__contact-title">
+                  <h2>Contact</h2>
                 </div>
-                <div className="item">
-                    <FontAwesomeIcon icon={faPhone} className="mobile" />  123-123-1231
+                
+                      <div className="footer__contact-item">
+                          <FontAwesomeIcon icon={faWeixin} className="weixin" />  rich888
+                      </div>
+                      <div className="footer__contact-item">
+                          <FontAwesomeIcon icon={faPhone} className="mobile" />  123-123-1231
+                      </div>
+                      <div className="footer__contact-item">
+                          <FontAwesomeIcon icon={faEnvelopeSquare} />  rich888@shinetours.net
+                      </div>
+                
+              </div>
+              <div className="col">
+                <div className="footer__contact-title">
+                  <h2>Hi</h2>
                 </div>
-                <div className="item">
-                    <FontAwesomeIcon icon={faEnvelopeSquare} />  rich888@shinetours.net
-                </div>
-            
+              </div>
+            </div>
+          </div>
         </div>
     </div>
 

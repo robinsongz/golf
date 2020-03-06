@@ -1,13 +1,35 @@
   
 .footer {
   background-color: #f8f9fa!important;
-  height: 20vh;
-}
+  height: 40vh;
 
-.item {
-  font-size: 30px;
-  text-align: center;
-  margin: 10px;
+
+  &__items {
+    text-align: center;
+    
+  }
+
+  &__contact {
+  
+  
+  }
+
+  &__contact-title {
+    margin: 60px;
+  }
+
+  &__contact-title h2 {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    border-bottom: solid 1px black;
+  }
+
+  &__contact-item {
+    font-size: 20px;
+    font-family: 'Open-Sans', sans-serif;
+    text-align: left;
+    margin: 10px;
+  }
 }
 
 .weixin {
