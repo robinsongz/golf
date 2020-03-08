@@ -8,6 +8,9 @@ import Attractions from './Components/Routes/Attractions';
 import PackageTour from './Components/Routes/PackageTour';
 import Activities from './Components/Routes/Activities';
 import GolfCourse from './Components/Routes/GolfCourse';
+import Safety from './Components/Routes/Safety';
+import Contact from './Components/Routes/Contact';
+import About from './Components/Routes/About';
 
 const Routes = () => {
   return (
@@ -19,6 +22,9 @@ const Routes = () => {
       <Route path='/activities' component={Activities} />
       <Route path='/packagetour' component={PackageTour} />
       <Route path='/golfcourse' component={GolfCourse} />
+      <Route path='/about' component={About} />
+      <Route path='/safety' component={Safety} />
+      <Route path='/contact' component={Contact} />
     </Switch >
   )
 }

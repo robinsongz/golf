@@ -2,11 +2,13 @@ import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
+import './PackageTour.scss';
+
 function PackageTour() {
   return (
-    <div>
-        <div className="golf-course__header">
-      <img src={require('../../Images/hotels1.jpg')} alt="hotels" />
+    <div className="packagetour">
+      <div className="packagetour__header">
+        <img src={require('../../Images/tour.jpg')} alt="package tour" />
       </div>
       <Tabs className="tabs">
         <TabList className="tabs__tablist">

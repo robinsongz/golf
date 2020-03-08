@@ -1,25 +1,10 @@
 .hotels {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
     &__header {
-        position: relative;
         text-align: center;
-        height: 50vh;
-        background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url('../../Images/hotels1.jpg');
-    }
-
-    &__header h1 {
-        font-size: 80px;
-        color: white;
-        text-transform: uppercase;
-        font-weight: 100;
-        letter-spacing: 2px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: rgba(0,0,0,0.8);
-	    -webkit-box-shadow: 0 0 30px rgba(0,0,0,0.7);
-            box-shadow: 0 0 30px rgba(0,0,0,0.8);
-        width: 100%;
     }
 }
 
@@ -34,6 +19,10 @@
     }
 
     &__tab {
+        font-family: 'BiauKai', sans-serif;
+        font-size: 40px;
+        background-color: #40826d;
+        color: #fff44f;
         font-weight: 400;
         width: 100%;
         text-transform: uppercase;
@@ -46,15 +35,23 @@
         padding: 6px 12px;
         cursor: pointer;
         transition: 0.1s;
+
         &:hover {
             font-weight: 700;
+        }
+    }
+
+    &__tab-panel {
+        text-align: center;
+        >img  {
+            width: 70%;
+            height: 150vh;
         }
     }
 }
 
 .react-tabs__tab--selected {
-    background: #00843D;
-    border-color: black;
+    background: #40826d;
     color: white;
     border-radius: none !important;
 }

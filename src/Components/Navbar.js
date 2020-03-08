@@ -41,7 +41,7 @@ class NavbarComp extends Component {
       <Navbar style={{ position: this.state.scrollingLock ? "fixed" : "relative"}} className="navbar" fill expand="lg">
           <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="">
-               <NavLink className="navbar__links" to="/aboutus">關於我們</NavLink>
+               <NavLink className="navbar__links" to="/about">關於我們</NavLink>
               </Nav>
               <Nav className="m-auto">
                 <NavLink className="navbar__links" to="/packagetour">套裝行程</NavLink>
@@ -50,7 +50,7 @@ class NavbarComp extends Component {
                 <NavLink className="navbar__links" to="/restaurants">餐廳</NavLink>
                 <NavLink className="navbar__links" to="/activities">娛樂活動</NavLink>
                 <NavLink className="navbar__links" to="/attractions">景點</NavLink>
-                <NavLink className="navbar__links" to="/attractions">旅游注意事項</NavLink>
+                <NavLink className="navbar__links" to="/safety">旅游注意事項</NavLink>
               </Nav>
               <Nav className="">
               <NavLink className="navbar__links" to="/contact">聯絡我們</NavLink>

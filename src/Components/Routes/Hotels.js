@@ -6,8 +6,8 @@ import './Hotels.scss';
 function Hotels() {
   return (
     <div className='hotels'>
-      <div className="golf-course__header">
-      <img src={require('../../Images/hotels1.jpg')} alt="hotels" />
+      <div className="hotels__header">
+        <img src={require('../../Images/hotels1.jpg')} alt="hotels" />
       </div>
       <Tabs className="tabs">
         <TabList className="tabs__tablist">
