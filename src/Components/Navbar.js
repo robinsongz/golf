@@ -40,14 +40,20 @@ class NavbarComp extends Component {
       </NavLink>
       <Navbar style={{ position: this.state.scrollingLock ? "fixed" : "relative"}} className="navbar" fill expand="lg">
           <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="">
+               <NavLink className="navbar__links" to="/aboutus">關於我們</NavLink>
+              </Nav>
               <Nav className="m-auto">
-                <NavLink className="navbar__links" to="/packagetour">Package Tour </NavLink>
-                <NavLink className="navbar__links" to="/hotels">Hotels</NavLink>
-                <NavLink className="navbar__links" to="/golfcourse">Golf Courses</NavLink>
-                <NavLink className="navbar__links" to="/restaurants">Restaurants</NavLink>
-                <NavLink className="navbar__links" to="/activities">Activities</NavLink>
-                <NavLink className="navbar__links" to="/attractions">Attractions</NavLink>
-                <NavLink className="navbar__links" to="/contact">Contact</NavLink>
+                <NavLink className="navbar__links" to="/packagetour">套裝行程</NavLink>
+                <NavLink className="navbar__links" to="/hotels">酒店</NavLink>
+                <NavLink className="navbar__links" to="/golfcourse">球場</NavLink>
+                <NavLink className="navbar__links" to="/restaurants">餐廳</NavLink>
+                <NavLink className="navbar__links" to="/activities">娛樂活動</NavLink>
+                <NavLink className="navbar__links" to="/attractions">景點</NavLink>
+                <NavLink className="navbar__links" to="/attractions">旅游注意事項</NavLink>
+              </Nav>
+              <Nav className="">
+              <NavLink className="navbar__links" to="/contact">聯絡我們</NavLink>
               </Nav>
           </Navbar.Collapse>
         </Navbar>

@@ -6,6 +6,10 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
 }
+@font-face {
+  font-family: 'BiauKai';
+  src: local('BiauKai'), url(./Fonts/biaukai.ttf) format('truetype');
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

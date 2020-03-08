@@ -7,7 +7,7 @@
 
 .navbar {
     margin-bottom: 10px;
-    background: #00843D;
+    background: #fff44f;
     height: 5vh;
     z-index: 1000;
     top: 0;
@@ -18,17 +18,17 @@
         position: relative;
         display: inline-block;
         align-items: center;
-        color: #fff;
+        color: #40826d;
         outline: none;
         letter-spacing: .8px;
-        font-weight: 400;
-        font-size: .9em;
+        font-weight: 700;
+        font-size: 1.5em;
         margin: 15px 25px;
-        font-family: 'Raleway';
+        font-family: 'BiauKai', serif;
         text-transform: uppercase;
 
         &:hover {
-            color: #FFCD00;
+            color: black;
             text-decoration: none;
         }
 
